@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "23.2.0",
+  "description": "[![Actions Status](https://github.com/darias03/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/darias03/frontend-project-44/actions)",
+  "main": "bin/brain-games.js",
+  "type": "module",
+  "scripts": {
+    "brain-games": "node bin/brain-games.js",
+    "start": "node bin/brain-games.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darias03/frontend-project-44.git"
+  },
+  "author": "Daria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darias03/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/darias03/frontend-project-44#readme"
+ 
+}
