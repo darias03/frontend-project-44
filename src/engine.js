@@ -28,6 +28,7 @@ const runGame = (description, generateRound) => {
         console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
         console.log('Let\'s try again!');
         rl.close();
+        process.exit(1);
       }
     });
   };
