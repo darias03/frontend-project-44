@@ -1,4 +1,4 @@
-import { createInterface } from 'readline';
+import { createInterface } from 'node:readline';
 
 const runGame = (description, generateRound) => {
   console.log('Welcome to the Brain Games!');
