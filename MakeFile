@@ -1,5 +1,19 @@
 install:
-		npm install
+	npm install
 
 brain-games:
-		node bin/brain-games.js
+	node bin/brain-games.js
+
+.PHONY: lint lint-fix format format-fix
+
+lint:
+	npm run lint
+
+lint-fix:
+	npx eslint . --fix
+
+format:
+	npx prettier --check .
+
+format-fix:
+	npx prettier --write .
