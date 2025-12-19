@@ -15,8 +15,9 @@
   "scripts": {
     "start": "node bin/brain-games.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:fix": "eslint . --fix", 
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,8 @@
   "homepage": "https://github.com/darias03/frontend-project-44#readme",
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^1.8.1",
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "jest": "^30.2.0"
   }
+
 }
