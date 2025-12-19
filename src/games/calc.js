@@ -10,8 +10,8 @@ const calculate = (num1, num2, operator) => {
 };
 
 const generateRound = () => {
-  const num1 = Math.floor(Math.random() * 50) + 1;
-  const num2 = Math.floor(Math.random() * 50) + 1;
+  const num1 = getSecureRandomInt(1, 50);
+  const num2 = getSecureRandomInt(1, 50);
   const operator = operators[Math.floor(Math.random() * operators.length)];
   
   const question = `${num1} ${operator} ${num2}`;
