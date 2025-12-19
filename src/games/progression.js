@@ -10,7 +10,7 @@ const generateRound = () => {
   const start = getSecureRandomInt(1, 20);
   const step = getSecureRandomInt(1, 10);
   const length = 10;
-  const hiddenIndex = Math.floor(Math.random() * length);
+  const hiddenIndex = length > 0 ? getSecureRandomInt(length) : 0;
   
   const progression = generateProgression(start, step, length);
   const correctAnswer = String(progression[hiddenIndex]);
