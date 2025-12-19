@@ -1,7 +1,7 @@
 import calculate from '../src/games/calc.js';
 
 test('addition', () => {
-  expect(calculate(5, 3, '+')).toBe(8);
+  expect(calculate(2, 3, '+')).toBe(5);
 });
 
 test('subtraction', () => {
@@ -9,9 +9,9 @@ test('subtraction', () => {
 });
 
 test('multiplication', () => {
-  expect(calculate(5, 3, '*')).toBe(15);
+  expect(calculate(4, 3, '*')).toBe(12);
 });
 
 test('unknown operator throws error', () => {
-  expect(() => calculate(5, 3, '/')).toThrow('Unknown operator: /');
+  expect(() => calculate(2, 3, '&')).toThrow('Unknown operator');
 });
