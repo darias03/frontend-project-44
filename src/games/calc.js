@@ -20,4 +20,4 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-export { generateRound };
+export { calculate, generateRound };

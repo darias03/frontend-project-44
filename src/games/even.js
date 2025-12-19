@@ -1,7 +1,9 @@
-﻿const generateRound = () => {
+﻿const isEven = (num) => num % 2 === 0;
+
+const generateRound = () => {
   const number = getSecureRandomInt(1, 100);
-  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-  return [number, correctAnswer];
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return [String(number), correctAnswer];
 };
-  
-export { generateRound };
+
+export { isEven, generateRound };

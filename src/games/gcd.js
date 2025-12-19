@@ -21,4 +21,4 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
   
-export { generateRound };
+export { calculateGcd, generateRound };
