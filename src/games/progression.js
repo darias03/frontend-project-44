@@ -7,8 +7,8 @@
 };
   
 const generateRound = () => {
-  const start = Math.floor(Math.random() * 20) + 1;
-  const step = Math.floor(Math.random() * 10) + 1;
+  const start = getSecureRandomInt(1, 20);
+  const step = getSecureRandomInt(1, 10);
   const length = 10;
   const hiddenIndex = Math.floor(Math.random() * length);
   

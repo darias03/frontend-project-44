@@ -12,7 +12,7 @@
 };
   
 const generateRound = () => {
-  const number = Math.floor(Math.random() * 100) + 1;
+  const number = getSecureRandomInt(1, 100);
   
   const question = String(number);
   const correctAnswer = isPrime(number) ? 'yes' : 'no';

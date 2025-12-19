@@ -12,8 +12,8 @@
 };
   
 const generateRound = () => {
-  const num1 = Math.floor(Math.random() * 50) + 1;
-  const num2 = Math.floor(Math.random() * 50) + 1;
+  const num1 = getSecureRandomInt(1, 50);
+  const num2 = getSecureRandomInt(1, 50);
   
   const question = `${num1} ${num2}`;
   const correctAnswer = String(calculateGcd(num1, num2));

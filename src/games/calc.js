@@ -12,7 +12,7 @@ const calculate = (num1, num2, operator) => {
 const generateRound = () => {
   const num1 = getSecureRandomInt(1, 50);
   const num2 = getSecureRandomInt(1, 50);
-  const operator = operators[Math.floor(Math.random() * operators.length)];
+  const operator = getSecureRandomInt(0, operators.length - 1);
   
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = String(calculate(num1, num2, operator));
