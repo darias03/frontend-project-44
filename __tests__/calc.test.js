@@ -1,4 +1,4 @@
-import calculate from '../src/games/calc.js';
+import {calculate} from '../src/games/calc.js';
 
 test('addition', () => {
   expect(calculate(2, 3, '+')).toBe(5);
