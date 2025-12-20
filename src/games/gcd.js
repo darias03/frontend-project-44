@@ -1,4 +1,6 @@
-﻿const calculateGcd = (a, b) => {
+﻿import { getSecureRandomInt } from '../utils/random.js'; // ВАЖНО: добавьте эту строку
+
+const calculateGcd = (a, b) => {
   let num1 = Math.abs(a);
   let num2 = Math.abs(b);
   

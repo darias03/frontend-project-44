@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "@hexlet/code",
   "version": "23.2.0",
   "description": "Brain games",
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/darias03/frontend-project-44.git&quot"
+    "url": "https://github.com/darias03/frontend-project-44.git"
   },
   "author": "Daria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/darias03/frontend-project-44/issues&quot"
+    "url": "https://github.com/darias03/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/darias03/frontend-project-44#readme&quot",
+  "homepage": "https://github.com/darias03/frontend-project-44#readme",
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",

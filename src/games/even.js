@@ -1,4 +1,6 @@
-﻿const isEven = (num) => num % 2 === 0;
+﻿import { getSecureRandomInt } from '../utils/random.js'; // <-- ЭТУ СТРОКУ НУЖНО ДОБАВИТЬ
+
+const isEven = (num) => num % 2 === 0;
 
 const generateRound = () => {
   const number = getSecureRandomInt(1, 100);

@@ -1,6 +1,4 @@
-﻿const getSecureRandomInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+﻿import { getSecureRandomInt } from '../utils/random.js'; // Импортируем, а не создаём
 
 const generateProgression = (start, step, length) => {
   const progression = [];
@@ -26,4 +24,4 @@ const generateRound = () => {
 };
 
 export { generateRound };
-  
+
