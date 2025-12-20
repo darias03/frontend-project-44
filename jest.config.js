@@ -1,7 +1,6 @@
 export default {
-  testMatch: ["**/__tests__/**/*.js"]
+  testMatch: ["**/__tests__/**/*.js"],
+  coveragePathIgnorePatterns: [
+    '/bin/',
+  ],
 };
-
-coveragePathIgnorePatterns: [
-  '/bin/',
-]
