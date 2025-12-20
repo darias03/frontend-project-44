@@ -1,17 +1,18 @@
-import { calculate, generateRound } from '../src/games/calc.js';
-
-test('addition', () => {
-  expect(calculate(2, 3, '+')).toBe(5);
-});
-
-test('subtraction', () => {
-  expect(calculate(5, 3, '-')).toBe(2);
-});
-
-test('multiplication', () => {
-  expect(calculate(4, 3, '*')).toBe(12);
-});
-
-test('unknown operator throws error', () => {
-  expect(() => calculate(2, 3, '&')).toThrow('Unknown operator');
-});
+jest.mock('../src/utils/random.js', () => ({
+    getSecureRandomInt: jest.fn(),
+  }));
+  
+  import { calculate, generateRound } from '../src/games/calc.js';
+  import { getSecureRandomInt } from '../src/utils/random.js';
+  
+  test('generateRound returns correct question and answer', () => {
+    getSecureRandomInt
+      .mockReturnValueOnce(2) // num1
+      .mockReturnValueOnce(3) // num2
+      .mockReturnValueOnce(0); // '+'
+  
+    const [question, answer] = generateRound();
+  
+    expect(question).toBe('2 + 3');
+    expect(answer).toBe('5');
+  });

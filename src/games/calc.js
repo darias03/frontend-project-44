@@ -1,4 +1,6 @@
-﻿const operators = ['+', '-', '*'];
+﻿import { getSecureRandomInt } from '../utils/random.js';
+
+const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {
   switch (operator) {
