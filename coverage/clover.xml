@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1766252158393" clover="3.2.0">
-  <project timestamp="1766252158393" name="All files">
+<coverage generated="1766252493481" clover="3.2.0">
+  <project timestamp="1766252493482" name="All files">
     <metrics statements="62" coveredstatements="62" conditionals="16" coveredconditionals="16" methods="10" coveredmethods="10" elements="88" coveredelements="88" complexity="0" loc="62" ncloc="62" packages="1" files="5" classes="5"/>
     <file name="calc.js" path="C:\frontend-project-44-1\src\games\calc.js">
       <metrics statements="15" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
