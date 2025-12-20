@@ -3,8 +3,8 @@ import { calculate, generateRound } from '../src/games/calc.js';
 
 // Мокаем (заменяем) функцию getSecureRandomInt для тестов
 jest.mock('../src/utils/random.js', () => ({
-    getSecureRandomInt: jest.fn()
-}));
+    getSecureRandomInt: jest.fn(), // Только функция, не весь модуль
+  }));
 
 describe('Калькулятор (calc.js)', () => {
     // 1. Тестируем функцию calculate
