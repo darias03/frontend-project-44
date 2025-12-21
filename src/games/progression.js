@@ -1,4 +1,4 @@
-﻿import { getSecureRandomInt } from '../utils/random.js'; // Импортируем, а не создаём
+import { getSecureRandomInt } from '../utils/random.js'; // Импортируем, а не создаём
 
 const generateProgression = (start, step, length) => {
   const progression = [];

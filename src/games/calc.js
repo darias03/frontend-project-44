@@ -1,4 +1,4 @@
-﻿import { getSecureRandomInt } from '../utils/random.js';
+import { getSecureRandomInt } from '../utils/random.js';
 
 // Добавьте массив операторов (его не было в коде)
 const operators = ['+', '-', '*'];
