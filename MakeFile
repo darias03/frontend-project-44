@@ -1,19 +1,23 @@
 install:
-	npm install
+	npm ci
 
 brain-games:
 	node bin/brain-games.js
 
-.PHONY: lint lint-fix format format-fix
+publish:
+	npm publish --dry-run
 
-lint:
-	npm run lint
+brain-calc:
+	node bin/brain-calc.js
 
-lint-fix:
-	npx eslint . --fix
+brain-even:
+	node bin/brain-even.js
 
-format:
-	npx prettier --check .
+brain-gcd:
+	node bin/brain-gcd.js
 
-format-fix:
-	npx prettier --write .
+brain-prime:
+	node bin/brain-prime.js
+
+brain-progression:
+	node bin/brain-progression.js

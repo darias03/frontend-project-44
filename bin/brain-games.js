@@ -2,4 +2,4 @@
 
 import {lab} from '../src/cli.js';
 
-lab.commonDivisor()
+lab.parity()
