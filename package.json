@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "brain-game",
@@ -26,6 +26,7 @@
     "brain-progression": "bin/brain-progression.js"
   },
   "dependencies": {
+    "modules": "^0.4.0",
     "random": "^5.4.1",
     "readline-sync": "^1.4.10"
   }
