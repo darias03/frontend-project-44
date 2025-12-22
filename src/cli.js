@@ -4,7 +4,7 @@ export class lab {
   static hello() {
     console.log('Welcome to the Brain Games!')
     const name = readlineSync.question('May I have your name? ')
-    console.log(Hello, ${name}!)
+    console.log(`Hello, ${name}!`)
     return name
   }
 
@@ -37,7 +37,7 @@ export class lab {
 
     while (correctCount < rounds) {
       const { question, answer } = this.getProgression()
-      console.log(Question: ${question})
+      console.log(`Question: ${question}`)
       const userAnswer = readlineSync.question('Your answer: ').trim()
 
       if (userAnswer === answer) {
@@ -45,21 +45,21 @@ export class lab {
         correctCount += 1
       }
       else {
-        console.log('${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.)
-        console.log(Let's try again, ${name}!)
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`)
+        console.log(`Let's try again, ${name}!`)
         return
       }
     }
 
-    console.log(Congratulations, ${name}!)
+    console.log(`Congratulations, ${name}!`)
   }
 
   static isPrime(n) {
     if (n <= 1) return false
     if (n <= 3) return true
-    if (n % 2 === 0  n % 3 === 0) return false
+    if (n % 2 === 0 || n % 3 === 0) return false
     for (let i = 5; i * i <= n; i += 6) {
-      if (n % i === 0  n % (i + 2) === 0) return false
+      if (n % i === 0 || n % (i + 2) === 0) return false
     }
     return true
   }
@@ -75,7 +75,7 @@ export class lab {
       const number = Math.floor(Math.random() * 99) + 2
       const correctAnswer = this.isPrime(number) ? 'yes' : 'no'
 
-      console.log(Question: ${number})
+      console.log(`Question: ${number}`)
       const userAnswer = readlineSync.question('Your answer: ').trim().toLowerCase()
 
       if (userAnswer === correctAnswer) {
@@ -83,13 +83,13 @@ export class lab {
         correctCount += 1
       }
       else {
-        console.log('${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.)
-        console.log(Let's try again, ${name}!)
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+        console.log(`Let's try again, ${name}!`)
         return
       }
     }
 
-    console.log(Congratulations, ${name}!)
+    console.log(`Congratulations, ${name}!`)
   }
 
   static gcd(a, b) {
@@ -115,7 +115,7 @@ export class lab {
       const num2 = Math.floor(Math.random() * 100) + 1
       const correctAnswer = this.gcd(num1, num2)
 
-      console.log(Question: ${num1} ${num2})
+      console.log(`Question: ${num1} ${num2}`)
       const userAnswer = readlineSync.question('Your answer: ').trim()
 
       if (Number(userAnswer) === correctAnswer) {
@@ -123,13 +123,13 @@ export class lab {
         correctCount += 1
       }
       else {
-        console.log('${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.)
-        console.log(Let's try again, ${name}!)
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+        console.log(`Let's try again, ${name}!`)
         return
       }
     }
 
-    console.log(Congratulations, ${name}!)
+    console.log(`Congratulations, ${name}!`)
   }
 
   static calc() {
@@ -144,6 +144,7 @@ export class lab {
       const b = Math.floor(Math.random() * 20) + 1
       const ops = ['+', '-', '*']
       const op = ops[Math.floor(Math.random() * ops.length)]
+
       let result
       switch (op) {
         case '+':
@@ -167,13 +168,13 @@ export class lab {
         correctCount += 1
       }
       else {
-        console.log('${userAnswer}' is wrong answer ;(. Correct answer was '${result}'.)
-        console.log(Let's try again, ${name}!)
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${result}'.`)
+        console.log(`Let's try again, ${name}!`)
         return
       }
     }
 
-    console.log(Congratulations, ${name}!)
+    console.log(`Congratulations, ${name}!`)
   }
 
   static parity() {
@@ -187,7 +188,7 @@ export class lab {
       const number = Math.floor(Math.random() * 100) + 1
       const correctAnswer = number % 2 === 0 ? 'yes' : 'no'
 
-      console.log(Question: ${number})
+      console.log(`Question: ${number}`)
       const userAnswer = readlineSync.question('Your answer: ').trim().toLowerCase()
 
       if (userAnswer === correctAnswer) {
@@ -195,12 +196,12 @@ export class lab {
         correctCount += 1
       }
       else {
-        console.log('${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.)
-        console.log(Let's try again, ${name}!)
+        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+        console.log(`Let's try again, ${name}!`)
         return
       }
     }
 
-    console.log(Congratulations, ${name}!)
+    console.log(`Congratulations, ${name}!`)
   }
 }
