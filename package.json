@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/darias03/frontend-project-44.git"
+    "url": "git+https://github.com/darias03/frontend-project-44.git"
   },
   "author": "Daria",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/darias03/frontend-project-44/issues"
+    "url": "https://github.com/darias03/frontend-project-44.git/issues"
   },
   "homepage": "https://github.com/darias03/frontend-project-44#readme",
   "type": "module",
@@ -26,7 +26,6 @@
     "brain-progression": "bin/brain-progression.js"
   },
   "dependencies": {
-    "modules": "^0.4.0",
     "random": "^5.4.1",
     "readline-sync": "^1.4.10"
   }
